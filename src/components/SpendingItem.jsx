@@ -4,7 +4,7 @@ function SpendingItem({ spending, onEdit, onDelete }) {
     const { name, datetime, price, photo, type } = spending;
   
     return (
-      <div className="flex items-start bg-white p-4 shadow rounded justify-between">
+      <div className="flex items-start bg-white p-4 shadow rounded justify-between spending-item">
         <div className="flex gap-4">
           {photo && (
             <img
@@ -16,7 +16,7 @@ function SpendingItem({ spending, onEdit, onDelete }) {
           <div>
             <h3 className="text-lg font-semibold">{name}</h3>
             <p className="text-sm text-gray-600">{new Date(datetime).toLocaleString()}</p>
-            <p className="text-sm">💰 {price.toFixed(2)} USD</p>
+            <p className="text-sm">💰 {price.toFixed(2)} PLN</p>
             <p className="text-sm">📌 {type}</p>
           </div>
         </div>

@@ -9,7 +9,7 @@ function FilterBar({ spendings, onFilter }) {
   useEffect(() => {
     let result = [...spendings];
 
-    if (query) {
+    if (query) { 
       result = result.filter((s) =>
         s.name.toLowerCase().includes(query.toLowerCase())
       );

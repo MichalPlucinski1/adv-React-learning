@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const defaultSpending = {
   name: '',
   datetime: '',
-  price: '',
+  price: '0.0',
   photo: '',
   type: 'other',
 };
